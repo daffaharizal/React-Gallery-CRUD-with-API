@@ -11,13 +11,20 @@ const Photos = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
+  // const deletePhoto = (id) => {
+  //   fetch(`https://gallery-app-server.vercel.app/photos/${id}`, {
+  //     method: "DELETE",
+  //   }).then(() => setPhotos(photos.filter(photo => {
+  //     console.log(`${photo.id} - ${id}`)
+  //     return photo.id !== id;
+  //   })))
+  // };
+
   const deletePhoto = (id) => {
     fetch(`https://gallery-app-server.vercel.app/photos/${id}`, {
       method: "DELETE",
-    }).then(() => setPhotos(photos.filter(photo => {
-      console.log(`${photo.id} - ${id}`)
-      return photo.id !== id;
-    })))
+    }).then(() => setPhotos(photos.filter(photo => photo.id !== id
+    )))
   };
 
   useEffect(() => {
