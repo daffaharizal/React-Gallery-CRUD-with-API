@@ -12,7 +12,7 @@ const Photos = () => {
   const [error, setError] = useState(null);
 
   const deletePhoto = (id) => {
-    fetch(`http://localhost:3001/photos/${id}`, {
+    fetch(`https://gallery-app-server.vercel.app/photos/${id}`, {
       method: "DELETE",
     }).then(() => setPhotos(photos.filter(photo => {
       console.log(`${photo.id} - ${id}`)

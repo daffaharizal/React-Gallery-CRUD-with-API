@@ -10,7 +10,6 @@ const AddPhoto = () => {
 
   const addPhoto = (e) => {
     e.preventDefault();
-    // TODO: answer here
 
     const data = {
       imageUrl: `${imageUrl}`,
