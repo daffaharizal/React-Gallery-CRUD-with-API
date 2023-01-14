@@ -66,7 +66,7 @@ const Photos = () => {
             className="form-select"
             style={{}}
           >
-            <option value="asc">Ascending</option>
+            <option value="asc" className='text-8xl'>Ascending</option>
             <option value="desc">Descending</option>
           </select>
           <form
