@@ -2,7 +2,7 @@
 
 There are features for filtering, searching, and adding Photo data
 
-## Capture Application
+## Capture Application - demo.png
 
 ![demo](./demo.png)
 
